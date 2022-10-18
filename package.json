@@ -1,0 +1,12 @@
+{
+  "name": "noteapp_bsit_3-3-leonel_angelo_guban",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "author": "Leonel Angelo Guban",
+  "license": "ISC"
+}
