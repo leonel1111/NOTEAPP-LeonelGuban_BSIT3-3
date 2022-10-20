@@ -1,6 +1,7 @@
 const add = require('./add')
 const present = require('./present')
 const read = require('./read')
+const update = require('./update')
 //const write = require('./write')
 
 // get user input 
@@ -34,4 +35,18 @@ if(cmd[2] == 'delete') {
   del(id, oldNote)
   
   console.log(del)
+}
+
+if(cmd[2] == 'update') {
+  const note = {
+    id: cmd[3],
+    title: cmd[4],
+    body: cmd[5]
+  }
+
+  const oldNote = read()
+
+  update(note,oldNote)
+  
+  console.log('default update');
 }
